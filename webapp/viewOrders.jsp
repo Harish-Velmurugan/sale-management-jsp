@@ -42,11 +42,11 @@ try{
 </form>
 <%
 	if(((Integer)session.getAttribute("isAdmin"))==1){ %>
-		<a href="./adminMenu.html">Back</a>
+		<a href="./admin/adminMenu.html">Back</a>
 <% 		
 	}
 	else{
-%> <a href="./customerMenu.html">Back</a>
+%> <a href="./customer/customerMenu.html">Back</a>
 <% 
 	}
 %>

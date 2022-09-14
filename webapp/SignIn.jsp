@@ -28,22 +28,23 @@ try{
     	if(rs.getInt("isAdmin") == 1){
     		out.print("Admin Login");
     		session.setAttribute("isAdmin",1);
-    		response.sendRedirect("./adminMenu.html");
+    		response.sendRedirect("./admin/adminMenu.html");
     	}
     	else{
     		out.print("customer login");
     		session.setAttribute("isAdmin",0);
-    		response.sendRedirect("./customerMenu.html");
+    		response.sendRedirect("./customer/customerMenu.html");
     	}
     	  
 	}
    	else{
-   		out.println("wrong password");
-   	}
+   		response.sendRedirect("./redirect.html");
+   	} 
     
     
     con.close(); 
-}catch(Exception e){ System.out.println(e);}
+}catch(Exception e){ 
+	response.sendRedirect("./redirect.html");}
 
 
 %> 

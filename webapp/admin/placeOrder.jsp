@@ -62,6 +62,7 @@ try {
 
 if((request.getMethod().equals("GET"))){
 	cart = new HashMap<>();
+	out.print("HI");
 	total = 0;
 }
 
