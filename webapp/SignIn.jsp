@@ -28,12 +28,12 @@
 			if (rs.getInt("isAdmin") == 1) {
 		out.print("Admin Login");
 		session.setAttribute("isAdmin", 1);
-		session.setAttribute("signedIn",true);
+		session.setAttribute("signedIn", true);
 		response.sendRedirect("./admin/adminMenu.jsp");
 			} else {
 		out.print("customer login");
 		session.setAttribute("isAdmin", 0);
-		session.setAttribute("signedIn",true);
+		session.setAttribute("signedIn", true);
 		response.sendRedirect("./customer/customerMenu.html");
 			}
 

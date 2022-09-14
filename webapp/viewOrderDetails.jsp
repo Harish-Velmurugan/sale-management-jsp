@@ -36,20 +36,20 @@
 		System.out.println(e);
 	}
 	%>
-	<% 
+	<%
 	if (((Integer) session.getAttribute("isAdmin")) == 1) {
-		%>
-		<form>
+	%>
+	<form>
 		<button formaction="./admin/adminMenu.jsp">Back</button>
 	</form>
-		<%
-		} else {
-		%>
+	<%
+	} else {
+	%>
 	<form>
 		<button formaction="./customer/customerMenu.html">Back</button>
 	</form>
 	<%
-		}
-		%>
+	}
+	%>
 </body>
 </html>

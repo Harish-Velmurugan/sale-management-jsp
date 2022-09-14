@@ -9,7 +9,7 @@
 <title>Inventory</title>
 </head>
 <body>
-<h1>Inventory</h1>
+	<h1>Inventory</h1>
 	<%
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
@@ -31,23 +31,23 @@
 	System.out.println(e);
 	}
 	%>
-	
-	<% 
+
+	<%
 	if (((Integer) session.getAttribute("isAdmin")) == 1) {
-		%>
-		<form>
+	%>
+	<form>
 		<button formaction="./admin/adminMenu.jsp">Back</button>
 	</form>
-		<%
-		} else {
-		%>
-		<form>
+	<%
+	} else {
+	%>
+	<form>
 		<button formaction="./customer/customerMenu.html">Back</button>
 	</form>
-		<%
-		}
-		%>
-	
+	<%
+	}
+	%>
+
 	<form>
 		<button formaction="./placeOrder.jsp">Place Order</button>
 	</form>

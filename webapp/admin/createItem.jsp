@@ -23,18 +23,18 @@
 			<input type="number" placeholder="Selling Cost" name="sellingCost" /><br>
 			<input type="submit" />
 		</form>
-		<% 
-	if (((Integer) session.getAttribute("isAdmin")) == 1) {
+		<%
+		if (((Integer) session.getAttribute("isAdmin")) == 1) {
 		%>
 		<form>
-		<button formaction="./admin/adminMenu.jsp">Back</button>
-	</form>
+			<button formaction="./admin/adminMenu.jsp">Back</button>
+		</form>
 		<%
 		} else {
 		%>
 		<form>
-		<button formaction="./customer/customerMenu.html">Back</button>
-	</form>
+			<button formaction="./customer/customerMenu.html">Back</button>
+		</form>
 		<%
 		}
 		%>
@@ -52,7 +52,7 @@
 			int id = 0, stock, buyingCost, sellingCost;
 			String itemName, smanufacturedDate, sexpiryDate;
 			if (rs.last()) {
-				id = rs.getInt("Item_ID") + 1;
+		id = rs.getInt("Item_ID") + 1;
 			}
 			itemName = request.getParameter("itemName");
 			stock = Integer.parseInt(request.getParameter("currentStock"));
