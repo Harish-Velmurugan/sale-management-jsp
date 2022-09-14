@@ -48,11 +48,11 @@ try {
 %>
 <%
 	if(((Integer)session.getAttribute("isAdmin"))==1){ %>
-		<a href="./admin/adminMenu.html">Menu</a>
+		<a href="./admin/adminMenu.jsp">Back</a>
 <% 		
 	}
 	else{
-%> <a href="./customer/customerMenu.html">Menu</a>
+%> <a href="./customer/customerMenu.html">back</a>
 <% 
 	}
 %>
