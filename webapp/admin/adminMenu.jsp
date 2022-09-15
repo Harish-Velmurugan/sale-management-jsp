@@ -37,7 +37,7 @@ try {
 			<a href="../viewItems.jsp">View available items</a>
 		</h3>
 		<h3>
-			<a href="./createItem.jsp">Create item</a>
+			<a href="./Item.jsp?mode=create">Create item</a>
 		</h3>
 		<h3>
 			<a href="./updateItem.jsp">Update item</a>

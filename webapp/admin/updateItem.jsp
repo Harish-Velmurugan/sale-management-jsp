@@ -35,7 +35,8 @@
 		System.out.println(e);
 		}
 		%>
-		<form action="editItemDetails.jsp">
+		<form action="Item.jsp">
+			<input type="hidden" name="mode" value="update"/>
 			<input type="number" name="item_ID" /> <input type="submit"
 				name="submit" />
 		</form>
